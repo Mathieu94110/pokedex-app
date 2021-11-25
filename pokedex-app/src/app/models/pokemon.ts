@@ -24,11 +24,11 @@ export class Pokemon {
   }
 
   getStat(nameStat: string) {
-    const statFound = this.stats.find((s) => s.state.name === nameStat);
+    const statFound = this.stats.find((s) => s.stat.name === nameStat);
     return statFound.base_stat;
   }
 
-  getHeightToMetres() {
+  getHeightToMeters() {
     return this.height / 10;
   }
   getWeightToKg() {
